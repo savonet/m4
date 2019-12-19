@@ -107,7 +107,7 @@ else
       fi
     fi
     if test -z "${BINDING()_STOP_CHECK}"; then
-      BINDING()_PACKAGES="`${OCAMLFIND} query -separator " " -format "-package %p" $BINGING_PKGS 2>/dev/null`"
+      BINDING()_PACKAGES="`${OCAMLFIND} query -separator " " -format "-package %p" $BINDING_PKGS 2>/dev/null`"
       echo ${with_[]binding()_dir} | grep ^/ > /dev/null 2>&1 \
           || with_[]binding()_dir=${PWD}/${with_[]binding()_dir}
       liquidsoap_ocamlcflags="${liquidsoap_ocamlcflags} -I ${with_[]binding()_dir} ${[]BINDING()_PACKAGES}"
